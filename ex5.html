@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        let start = prompt("Donner la valeur de départ");
+        let end = prompt("Donner la valeur d'arrivée");
+     
+        //conversion en valeurs entieres
+        let startInt = parseInt(start);
+        let endInt = parseInt(end);
+
+        for (let i = startInt + 1; i < endInt; i++) {
+            if (i % 2 == 0) {
+                document.write(i + "<br>");
+            }
+        }
+        
+
+
+        
+    </script>
+
+</body>
+</html>

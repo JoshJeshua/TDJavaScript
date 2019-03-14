@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        //trouver l'année courante
+        let currentDate = new Date();
+        let currentYear = currentDate.getFullYear();
+
+        //trouver l'année de naissanre de l'user
+        let birthDate = prompt("Donner votre date de naissance (MM-AAAA-JJ)");
+        let birthYear = birthDate.substring(3, 7);
+        document.write("Votre age est " + (currentYear - birthYear));
+    </script>
+</body>
+</html>

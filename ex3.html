@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+	<script>
+		// code goes here
+		let qty, hours, minutes, seconds;
+
+		qty = prompt("Entrer la valeur en secondes");
+		if (qty >= 0) {
+			// math :::::::::)
+			hours = Math.floor(qty / 3600);
+			minutes = Math.floor((qty % 3600) / 60); // %: modulo
+			seconds = qty - (hours * 3600) - (minutes * 60);
+
+			document.write("le nombre d'heures est " + hours + "<br>");
+			document.write("le nombre de minutes est " + minutes + "<br>");
+			document.write("le nombre de secondes est " + seconds);
+		} else if (isNaN(qty)){
+			alert("Faites attention! Qantité doit être numérique");
+		} else {
+			alert("Faites attention! Valeur négative");
+		}
+	</script>
+
+</body>
+</html>

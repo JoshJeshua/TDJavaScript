@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+	<script>
+		// code goes here
+		let age = prompt("Quel est l'age de votre fils?");
+		if (isNaN(age)) {
+			alert("L'age doit être numérique");
+		}else if ((6 <= age) && (age <= 7)) {
+			document.write("c'est un poussin");
+		} else if ((8 <= age) && (age <= 9)) {
+			document.write("c'est un pupille");
+		} else if ((10 <= age) && (age <= 11)) {
+			document.write("c'est un minime");
+		} else if ((12 <= age) && (age <= 14)) {
+			document.write("c'est un cadet");
+		} else {
+			alert("L'age doit être entre 6 et 14");
+		}
+
+	</script>
+</body>
+</html>
